@@ -42,9 +42,8 @@ end
 # Given an array of spicy foods, **return an array of hashes** 
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
-  # your code here
+  spicy_foods.sort_by { |food| food[:heat_level] }
 end
-
 # given an array of spicy foods, output to the terminal ONLY 
 # the spicy foods that have a heat level greater than 5, in the following format: 
 # Buffalo Wings (American) | Heat Level: 🌶🌶🌶
